@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Create an axios instance
 const axiosInstance = axios.create({
-  baseURL: 'https://gym-tracker-gymtracker.2.rahtiapp.fi:8080/api', // BackEnd URL
+  baseURL: 'https://gym-tracker-gymtracker.2.rahtiapp.fi/api', // BackEnd URL
   headers: {
     'Content-Type': 'application/json',
   },

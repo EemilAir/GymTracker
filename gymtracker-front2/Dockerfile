@@ -35,7 +35,7 @@ COPY --from=build /app/build /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Expose the port Nginx is running on
-EXPOSE 3000
+EXPOSE 8080
 
 # Set the user to nginx for security
 USER nginx:root
