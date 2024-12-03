@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GymtrackerApplication<gymtracker>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "backendsyksy24.gymtracker.GymtrackerApplication",
+            "projectName": "gymtracker",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
