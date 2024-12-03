@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import axios from '../components/axiosConfig';
 import { useNavigate, Link } from 'react-router-dom';
+import { API_BASE_URL } from './config';
 
 const RegisterContainer = styled.div`
   max-width: 400px;
@@ -78,7 +79,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post('http://localhost:8080/api/register', { username, passwordHash: password });
+      await axios.post(`${API_BASE_URL}/register`, { username, passwordHash: password });
       // Redirect to Login page after successful registration
       navigate('/login');
     } catch (err) {
