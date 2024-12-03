@@ -63,7 +63,7 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
             .csrf(csrf -> csrf.disable()) // Disabled CSRF protection for JWT-based stateless API
-            .cors(Customizer.withDefaults()) // Enable CORS
+            //.cors(Customizer.withDefaults()) // Enable CORS
             .authorizeHttpRequests(authorize -> authorize   
                 .requestMatchers("/api/register", "/api/login").permitAll() // Allow registration and login without authentication
                 .anyRequest().authenticated()
