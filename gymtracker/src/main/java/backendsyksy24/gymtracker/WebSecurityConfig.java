@@ -50,7 +50,7 @@ public class WebSecurityConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // All endpoints
-                        .allowedOrigins("http://localhost:3000") // Frontend URL
+                        .allowedOrigins("https://gym-rat-front-gymtracker.2.rahtiapp.fi:3000") // Frontend URL
                         .allowedMethods("*") // GET, POST, PUT, DELETE, PATCH
                         .allowedHeaders("*") // Authorization, Content-Type
                         .allowCredentials(true); // Allow cookies
